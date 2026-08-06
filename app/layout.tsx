@@ -14,6 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tanishkumar.dev'),
   title: 'Tanish Kumar | Portfolio',
   description: 'Computer Science student at VIT Chennai and Software Development Intern. Experienced in full-stack web development, backend automation, and cloud tools.',
   keywords: ['Tanish Kumar', 'Software Engineer', 'Software Development Intern', 'Full Stack Developer', 'VIT Chennai', 'Next.js', 'React.js', 'Spring Boot', 'Node.js', 'AWS', 'Java', 'Portfolio'],

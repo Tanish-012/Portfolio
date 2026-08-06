@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 
 const socialLinks = [
-  { icon: Github, href: "https://https://github.com/Tanish-012", label: "GitHub" },
+  { icon: Github, href: "https://github.com/Tanish-012", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/tanish-kumar-109b96344/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:kumartanish917@gmail.com", label: "Email" },
 ]

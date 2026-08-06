@@ -2,6 +2,7 @@ import { Navigation } from "@/components/portfolio/navigation"
 import { Hero } from "@/components/portfolio/hero"
 import { About } from "@/components/portfolio/about"
 import { Skills } from "@/components/portfolio/skills"
+import { CodingProfiles } from "@/components/portfolio/coding-profiles"
 import { Projects } from "@/components/portfolio/projects"
 import { Experience } from "@/components/portfolio/experience"
 import { Achievements } from "@/components/portfolio/achievements"
@@ -15,6 +16,7 @@ export default function Portfolio() {
       <Hero />
       <About />
       <Skills />
+      <CodingProfiles />
       <Projects />
 
       <Experience />

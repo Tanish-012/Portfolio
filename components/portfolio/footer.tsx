@@ -33,7 +33,7 @@ export function Footer() {
             className="flex items-center gap-4"
           >
             {[
-              { icon: Github, href: "https://https://github.com/Tanish-012", label: "GitHub" },
+              { icon: Github, href: "https://github.com/Tanish-012", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/tanish-kumar-109b96344/", label: "LinkedIn" },
               { icon: Mail, href: "mailto:kumartanish917@gmail.com", label: "Email" },
             ].map((link) => (

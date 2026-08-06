@@ -49,9 +49,15 @@ function AnimatedCounter({ value, duration = 2000 }: { value: number; duration?:
 function ContributionHeatmap() {
   const weeks = 52
   const days = 7
-  const contributions = useRef(
-    Array.from({ length: weeks * days }, () => Math.floor(Math.random() * 5))
-  ).current
+  // Use deterministic pattern based on index to prevent SSR hydration mismatches
+  const contributions = Array.from({ length: weeks * days }, (_, i) => {
+    const hash = (i * 17 + i * i * 3 + 7) % 100
+    if (hash < 35) return 0
+    if (hash < 60) return 1
+    if (hash < 78) return 2
+    if (hash < 90) return 3
+    return 4
+  })
 
   const getColor = (level: number) => {
     const colors = [
@@ -116,7 +122,7 @@ export function CodingProfiles() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="coding-profiles" className="py-24 relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 rounded-full bg-accent/10 blur-[150px] -translate-y-1/2" />
 
       <div className="container mx-auto px-4 relative z-10" ref={sectionRef}>
@@ -148,7 +154,7 @@ export function CodingProfiles() {
               </div>
               <div>
                 <h3 className="text-2xl font-semibold">GitHub</h3>
-                <p className="text-muted-foreground text-sm">@alexchen</p>
+                <p className="text-muted-foreground text-sm">@Tanish-012</p>
               </div>
             </div>
 
@@ -192,7 +198,7 @@ export function CodingProfiles() {
               </div>
               <div>
                 <h3 className="text-2xl font-semibold">LeetCode</h3>
-                <p className="text-muted-foreground text-sm">@alexchen</p>
+                <p className="text-muted-foreground text-sm">@Tanish-012</p>
               </div>
             </div>
 

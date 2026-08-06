@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Intev AI",
+    title: "Interv AI",
     description: "An AI-powered mock interview platform that simulates technical interviews with real-time voice interactions. Users can practice role-specific interviews, receive AI-generated feedback, and track their performance to improve communication and problem-solving skills.",
     image: "/projects/mock-interview.png",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Drizzle ORM", "Vapi AI", "Gemini API", "Clerk Auth"],
@@ -206,7 +206,7 @@ export function Projects() {
             className="glass-card border-primary/30 hover:border-primary/60"
             asChild
           >
-            <a href="https://https://github.com/Tanish-012" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Tanish-012" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
               View More on GitHub
             </a>

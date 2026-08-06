@@ -197,7 +197,7 @@ export function Hero() {
               className="glass-card border-primary/30 hover:border-primary/60 transition-all duration-300 px-8 py-6 text-lg"
               asChild
             >
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText className="mr-2 h-5 w-5" />
                 Resume
               </a>
@@ -220,7 +220,7 @@ export function Hero() {
             className="flex justify-center gap-6"
           >
             {[
-              { icon: Github, href: "https://https://github.com/Tanish-012", label: "GitHub" },
+              { icon: Github, href: "https://github.com/Tanish-012", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/tanish-kumar-109b96344/", label: "LinkedIn" },
               { icon: Mail, href: "mailto:kumartanish917@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
