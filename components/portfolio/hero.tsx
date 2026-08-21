@@ -197,7 +197,7 @@ export function Hero() {
               className="glass-card border-primary/30 hover:border-primary/60 transition-all duration-300 px-8 py-6 text-lg"
               asChild
             >
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText className="mr-2 h-5 w-5" />
                 Resume
               </a>
